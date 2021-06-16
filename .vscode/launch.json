@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/nouman/Documents/Projects/pysot/pysot/tools/demo1.py",
+            "console": "integratedTerminal",
+            "args": ["--config /home/nouman/Documents/Projects/pysot/pysot/experiments/siamrpn_r50_l234_dwxcorr/config.yaml --snapshot /home/nouman/Documents/Projects/pysot/pysot/experiments/siamrpn_r50_l234_dwxcorr/model.pth --video /home/nouman/Documents/Projects/pysot/pysot/demo/1.mp4"],
+            
+        }
+    ]
+}
+
+/*
+
+*/

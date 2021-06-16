@@ -1,0 +1,52 @@
+Python Packages required before processing the videos
+
+Requirments
+Conda with Python 3.7.
+Nvidia GPU.
+PyTorch 0.4.1
+yacs
+pyyaml
+matplotlib
+tqdm
+OpenCV
+
+
+
+Installation instructions
+
+# Note again: Conda should be installed
+
+Create environment and activate
+conda create --name pysot python=3.7
+conda activate pysot
+
+
+Install numpy/pytorch/opencv
+conda install numpy
+conda install pytorch=0.4.1 torchvision -c pytorch
+pip install opencv-python
+
+
+Install other requirements
+pip install pyyaml yacs tqdm colorama matplotlib cython tensorboardX
+Build extensions
+python setup.py build_ext --inplace
+
+
+
+Add PySOT to your PYTHONPATH
+export PYTHONPATH=/path/to/pysot(replace with your path):$PYTHONPATH
+
+
+
+execution command in the psot directory
+python3 tools/demo1.py    --config experiments/siamrpn_r50_l234_dwxcorr/config.yaml     --snapshot experiments/siamrpn_r50_l234_dwxcorr/model.pth     --video demo/1.mp4
+
+
+
+After executing the last command in the terminal, it will open a new window, which will ask to specify the region of interest of the ball we want to track. draw a rectangle accros the ball, should be the accurate one. when done press the space bar.
+Now the code will start processing the video. And when done processing, it will save the video and its coordinates in the same directory!
+
+
+thats all
+* the main code file is inside the tools folder named demo1.py

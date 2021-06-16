@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/home/nouman/anaconda3/envs/pysot/bin/python",
+    "python.testing.pytestArgs": [
+        "tools"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
